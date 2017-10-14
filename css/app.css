@@ -1,8 +1,166 @@
-/*custom css here*/
+/*------------------------------General------------------------------*/
 
 .boxHelper
 {
 	color: #fff;
 	background-color: #000;
 	text-align: center;
+}
+
+h2
+{
+	font-size: 36px;
+	color: #316f3f;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 30px;
+	color: #71a87b;
+	text-align: center;
+}
+
+p
+{
+	text-align: center;
+	font-family: 'Arial', sans-serif, times;
+}
+
+/*------------------------------Nav/Header------------------------------*/
+header img
+{
+	width: 100%;
+}
+
+#burgerMenu .menu-icon::after
+{
+	background: #316f3f;
+	margin-top: 5px;
+	box-shadow: 0 7px 0 #316f3f, 0 14px 0 #316f3f;
+}
+
+#logo
+{
+	background-color: #316f3f;
+	height: 111px;
+}
+
+nav
+{
+	text-align: center;
+}
+
+nav ul
+{
+	list-style: none;
+	font-size: 48px;
+	color: #316f3f;
+}
+
+nav ul li
+{
+	margin-top: 15px;
+	border-bottom: 1px solid #316f3f;
+	padding-bottom: 15px;
+}
+
+nav ul li:last-child
+{
+	border-bottom: none;
+}
+
+/*------------------------------About------------------------------*/
+
+#resume
+{
+	font-size: 18.22px;
+	color: #316f3f;
+	padding: 10px;
+	border: 3px solid #316f3f;
+}
+
+#resume:hover
+{
+	color: #fff;
+	background-color: #316f3f;
+}
+
+/*------------------------------Portfolio------------------------------*/
+
+#portfolio
+{
+	margin-top: 150px;
+}
+
+.portfolioPiece
+{
+	height: 319px;
+	border: 1px solid #316f3f
+}
+
+video
+{
+	background-color: #000;
+	margin-top: 50px;
+}
+
+/*------------------------------Portfolio------------------------------*/
+
+input::-webkit-input-placeholder
+{
+	color: #b9d2be;
+}
+
+input::-moz-placeholder
+{
+	color: #b9d2be;
+}
+
+input:-ms-input-placeholder
+{
+	color: #b9d2be;
+}
+
+input:-moz-placeholder
+{
+	color: #b9d2be;
+}
+
+textarea::-webkit-input-placeholder
+{
+	color: #b9d2be;
+}
+
+textarea::-moz-placeholder
+{
+	color: #b9d2be;
+}
+
+textarea:-ms-input-placeholder
+{
+	color: #b9d2be;
+}
+
+textarea:-moz-placeholder
+{
+	color: #b9d2be;
+
+}
+
+#submit
+{
+	background-color: #fff;
+	font-size: 18.22px;
+	color: #316f3f;
+	padding: 10px;
+	border: 3px solid #316f3f;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#submit:hover
+{
+	color: #fff;
+	background-color: #316f3f;
 }
