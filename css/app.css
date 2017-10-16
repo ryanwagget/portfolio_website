@@ -87,11 +87,13 @@ header img
 #logo
 {
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 nav
 {
 	text-align: center;
+	background-color: #fff;
 }
 
 nav ul
@@ -138,6 +140,9 @@ nav ul li a
 		color: #959595;
 		list-style: none;
 		font-size: 36px;
+		position: absolute;
+		margin-left: 190px;
+		margin-top: 15px;
 	}
 
 	nav ul li
@@ -146,7 +151,7 @@ nav ul li a
 		border-bottom: 0px;
 		padding-bottom: 0px;
 		display: inline;
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 
 	nav ul li:first-child
@@ -170,6 +175,8 @@ nav ul li a
 	nav ul
 	{
 		font-size: 48px;
+		margin-left: 300px;
+		margin-top: 30px;
 	}
 
 	nav ul li

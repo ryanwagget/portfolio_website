@@ -13,7 +13,7 @@
   <body>
     <h1 class="hide">Ryan Wagget's Portfolio</h1>
     <header id="header">
-      <img data-interchange="[images/s-headImage.jpg, small], [images/l-headImage.jpg, medium],[images/l-headImage.jpg, large]" alt="A tree in the fog">
+      <img id="tree" data-interchange="[images/s-headImage.jpg, small], [images/l-headImage.jpg, medium],[images/l-headImage.jpg, large]" alt="A tree in the fog">
     </header>
 
 
@@ -22,10 +22,11 @@
         <button class="menu-icon float-right" type="button" data-toggle>
         </button>
     </div>
-      <nav id="mainNav">
+      <div data-sticky-container>
+      <nav class="sticky" data-sticky data-top-anchor="about" id="mainNav">
       <h2 class="hide">Main Navigation</h2>
         <div class="row">
-          <img class="small-6 small-offset-3 medium-3 medium-pull-3 large-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
+          <img class="small-6 small-offset-3 medium-3 medium-pull-3 large-3 large-pull-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
           <ul class="small-12 medium-9 large-9 columns">
             <li><a href="#header">Top</a></li>
             <li><a href="#about">About</a></li>
@@ -34,6 +35,7 @@
           </ul>
         </div>
       </nav>
+    </div>
 
 
 <!--About-->
@@ -89,7 +91,7 @@
           <h3>Get in Touch</h3>
           <p>If you have any questions or concerns, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
         </div>
-        <form action="form.php" method="post" class="small-12 medium-6 large-8 columns">
+        <form action="form.php" method="post" class="small-12 medium-6 large-6 columns">
             <input type="text" required id="name" name="fullName" placeholder="Name">
             <input type="email" required id="email" placeholder="Email">
             <input type="text" required id="human" placeholder="What is 1+2?">
