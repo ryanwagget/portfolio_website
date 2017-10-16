@@ -7,11 +7,18 @@
 	text-align: center;
 }
 
+@font-face
+{
+	font-family: 'rimouski sb';
+	src: url('../fonts/rimouski sb.ttf');
+}
+
 h2
 {
 	font-size: 36px;
 	color: #316f3f;
 	text-align: center;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 h3
@@ -19,12 +26,49 @@ h3
 	font-size: 30px;
 	color: #71a87b;
 	text-align: center;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 p
 {
 	text-align: center;
 	font-family: 'Arial', sans-serif, times;
+}
+
+@media screen and (min-width: 48em)
+{
+	h2
+	{
+		font-size: 48px;
+	}
+
+	h3
+	{
+		font-size: 36px;
+	}
+
+	p
+	{
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 80em)
+{
+	h2
+	{
+		font-size: 60px;
+	}
+
+	h3
+	{
+		font-size: 48px;
+	}
+
+	p
+	{
+		font-size: 20px;
+	}
 }
 
 /*------------------------------Nav/Header------------------------------*/
@@ -42,8 +86,7 @@ header img
 
 #logo
 {
-	background-color: #316f3f;
-	height: 111px;
+	margin-top: 10px;
 }
 
 nav
@@ -56,6 +99,7 @@ nav ul
 	list-style: none;
 	font-size: 48px;
 	color: #316f3f;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 nav ul li
@@ -65,12 +109,85 @@ nav ul li
 	padding-bottom: 15px;
 }
 
+nav ul li:first-child
+{
+	margin-top: 5px;
+}
+
 nav ul li:last-child
 {
 	border-bottom: none;
 }
 
+nav ul li a
+{
+	color: #316f3f;
+}
+
+@media screen and (min-width: 48em)
+{
+	nav
+	{
+		text-align: inital;
+		border-top: 2px solid #316f3f;
+		border-bottom: 2px solid #316f3f;
+	}
+
+	nav ul
+	{
+		color: #959595;
+		list-style: none;
+		font-size: 36px;
+	}
+
+	nav ul li
+	{
+		margin-top: 0px;
+		border-bottom: 0px;
+		padding-bottom: 0px;
+		display: inline;
+		margin-left: 20px;
+	}
+
+	nav ul li:first-child
+	{
+		margin-top: 0px;
+	}
+
+	nav ul li a
+	{
+		color: #959595;
+	}
+
+	nav ul li a:hover
+	{
+		color: #316f3f;
+	}
+}
+
+@media screen and (min-width: 80em)
+{
+	nav ul
+	{
+		font-size: 48px;
+	}
+
+	nav ul li
+	{
+		margin-left: 40px;
+	}
+}
 /*------------------------------About------------------------------*/
+
+#dog
+{
+	margin-top: 60px;
+}
+
+#about
+{
+	margin-top: 20px;
+}
 
 #resume
 {
@@ -78,6 +195,7 @@ nav ul li:last-child
 	color: #316f3f;
 	padding: 10px;
 	border: 3px solid #316f3f;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 #resume:hover
@@ -86,11 +204,19 @@ nav ul li:last-child
 	background-color: #316f3f;
 }
 
+@media screen and (min-width: 80em)
+{
+	#resume
+	{
+		font-size: 36px;
+	}
+}
+
 /*------------------------------Portfolio------------------------------*/
 
 #portfolio
 {
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
 .portfolioPiece
@@ -105,46 +231,59 @@ video
 	margin-top: 50px;
 }
 
-/*------------------------------Portfolio------------------------------*/
+/*------------------------------Contact------------------------------*/
+
+#contact
+{
+	margin-top: 30px;
+}
 
 input::-webkit-input-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 input::-moz-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 input:-ms-input-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 input:-moz-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 textarea::-webkit-input-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 textarea::-moz-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 textarea:-ms-input-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 textarea:-moz-placeholder
 {
 	color: #b9d2be;
+	font-family: 'rimouski sb', Arial, sans-serif;
 
 }
 
@@ -157,10 +296,23 @@ textarea:-moz-placeholder
 	border: 3px solid #316f3f;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: 'rimouski sb', Arial, sans-serif;
 }
 
 #submit:hover
 {
 	color: #fff;
 	background-color: #316f3f;
+}
+
+#linkedIn
+{
+	width: 41px;
+	height: 41px;
+	margin-left: 200px;
+}
+
+form
+{
+	margin-bottom: 20px;
 }

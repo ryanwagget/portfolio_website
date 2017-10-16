@@ -12,7 +12,7 @@
 <!--Header-->
   <body>
     <h1 class="hide">Ryan Wagget's Portfolio</h1>
-    <header>
+    <header id="header">
       <img data-interchange="[images/s-headImage.jpg, small], [images/l-headImage.jpg, medium],[images/l-headImage.jpg, large]" alt="A tree in the fog">
     </header>
 
@@ -22,23 +22,25 @@
         <button class="menu-icon float-right" type="button" data-toggle>
         </button>
     </div>
-    <nav id="mainNav">
-    <h2 class="hide">Main Navigation</h2>
-      <img id="logo"src="" alt="Ryan Wagget logo">
-      <ul>
-        <li href="#">Top</li>
-        <li href="#">About</li>
-        <li href="#">Portfolio</li>
-        <li href="#">Contact</li>
-      </ul>
-    </nav>
+      <nav id="mainNav">
+      <h2 class="hide">Main Navigation</h2>
+        <div class="row">
+          <img class="small-6 small-offset-3 medium-3 medium-pull-3 large-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
+          <ul class="small-12 medium-9 large-9 columns">
+            <li><a href="#header">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
 
 <!--About-->
     <section id="about">
     <h2>Who I Am</h2>
       <div class="row">
-        <img  class="small-12 medium-6 large-6 columns" data-interchange="[images/s-dog.jpg, small], [images/l-dog.jpg, medium],[images/l-dog.jpg, large]" alt="Bear the Bernedoodle">
+        <img id="dog" class="small-12 medium-6 large-6 columns" data-interchange="[images/s-dog.jpg, small], [images/l-dog.jpg, medium],[images/l-dog.jpg, large]" alt="Bear the Bernedoodle">
         <div class="small-12 medium-6 large-6 columns">
           <h3>Hi, I'm Ryan!</h3>
           <p>I’m an Interactive Media Designer based in London, Ontario. I love doing all things creative! Wether it’s graphic design, motion design, creating a strong brand identity, constructing 3D models, taking pictures, or developing a website, i’m happy to do it. I’m a highly driven individual who loves a good challenge and enjoys thinking of effective “outside of the box” solutions. I’m also really into travelling, doing new things, and am a huge dog person! The picture to the left is my dog, not me. Thanks for visiting my portfolio!</p>
@@ -81,7 +83,7 @@
 
 <!--Contact-->
     <section id="contact">
-    <h2 class="hide">Contact Me</h2>
+    <h2>Contact Me</h2>
       <div class="row">
         <div class="small-12 medium-6 large-6 columns">
           <h3>Get in Touch</h3>
@@ -93,6 +95,9 @@
             <input type="text" required id="human" placeholder="What is 1+2?">
             <textarea name="comments" id="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
             <input id="submit" type="submit" value="Send!">
+            <a href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
+              <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
         </form>
       </div>
     </section>
