@@ -1,23 +1,14 @@
 $(document).foundation()
 
 //variables
-var tree = document.querySelector("#tree");
-var dog = document.querySelector("#dog");
-var dogTop;
-var screenPos;
+var intro = document.querySelector("#headTitle");
+
 //Functions
-
-
-function colorChange ()
+function fadeIn()
 {
-  screenPos = window.scrollY;
-  dogTop = dog.offsetTop;
-    if(dog.scrollTop == 0)
-    {
-      console.log("yay");
-    }
-
+  TweenMax.to(intro, 2, {opacity: 1});
+  TweenMax.to(intro, 2, {top: "20px"});
 }
 
 //listeners
-window.addEventListener("scroll", colorChange, false);
+window.addEventListener("load", fadeIn, false);

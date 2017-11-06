@@ -27,6 +27,7 @@ h3
 	color: #71a87b;
 	text-align: center;
 	font-family: 'rimouski sb', Arial, sans-serif;
+	margin-top: 10px;
 }
 
 p
@@ -77,6 +78,16 @@ header img
 	width: 100%;
 }
 
+#headTitle
+{
+	z-index: 100;
+	position: absolute;
+	font-size: 36px;
+	color: #fff;
+	margin-top: 90px;
+	opacity: 0;
+}
+
 #burgerMenu .menu-icon::after
 {
 	background: #316f3f;
@@ -90,10 +101,18 @@ header img
 	margin-bottom: 10px;
 }
 
+#burgerMenu
+{
+	margin-top: 23px;
+	margin-right: 10px;
+}
+
 nav
 {
 	text-align: center;
 	background-color: #fff;
+	border-top: 1px solid #316f3f;
+	border-bottom: 1px solid #316f3f;
 }
 
 nav ul
@@ -123,7 +142,33 @@ nav ul li:last-child
 
 nav ul li a
 {
+	color: #71a87b;
+}
+
+nav ul li a:hover
+{
 	color: #316f3f;
+}
+
+@media screen and (min-width: 23.4375em)
+{
+	#burgerMenu
+	{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (min-width: 37.5em)
+{
+	#headTitle
+	{
+		font-size: 48px;
+	}
+
+	#burgerMenu
+	{
+		margin-top: 50px;
+	}
 }
 
 @media screen and (min-width: 48em)
@@ -131,8 +176,6 @@ nav ul li a
 	nav
 	{
 		text-align: inital;
-		border-top: 2px solid #316f3f;
-		border-bottom: 2px solid #316f3f;
 	}
 
 	nav ul
@@ -172,6 +215,12 @@ nav ul li a
 
 @media screen and (min-width: 80em)
 {
+	#headTitle
+	{
+		font-size: 60px;
+		margin-top: 150px;
+	}
+
 	nav ul
 	{
 		font-size: 48px;
@@ -183,17 +232,27 @@ nav ul li a
 	{
 		margin-left: 40px;
 	}
+
+}
+
+@media screen and (min-width: 120em)
+{
+	#headTitle
+	{
+		font-size: 72px;
+		margin-top: 350px;
+	}
 }
 /*------------------------------About------------------------------*/
 
 #dog
 {
-	margin-top: 60px;
+	margin-top: 5px;
 }
 
 #about
 {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 #resume
@@ -232,6 +291,11 @@ nav ul li a
 	border: 1px solid #316f3f
 }
 
+.portfolioPiece :hover
+{
+	background-color: #316f3f;
+}
+
 video
 {
 	background-color: #000;
@@ -242,7 +306,7 @@ video
 
 #contact
 {
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 input::-webkit-input-placeholder
@@ -316,10 +380,14 @@ textarea:-moz-placeholder
 {
 	width: 41px;
 	height: 41px;
-	margin-left: 200px;
 }
 
 form
 {
 	margin-bottom: 20px;
+}
+
+#bottom
+{
+	margin: 0 auto;
 }
