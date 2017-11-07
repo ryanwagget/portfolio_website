@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="js/minified/TweenMax.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
   </head>
@@ -15,7 +16,7 @@
 <!--Header-->
   <body>
     <h1 class="hide">Ryan Wagget's Portfolio</h1>
-    <header class="scrollme" id="header">
+    <header class="scrollme" id="section1">
       <h2 id="headTitle">Hi, my name is Ryan Wagget and I'm a graphic / motion designer!</h2>
       <img class="animateme" data-when="exit" data-from="0" data-to=".35" data-opacity="0" id="tree" data-interchange="[images/s-headImage.jpg, small], [images/l-headImage.jpg, medium],[images/l-headImage.jpg, large]" alt="A tree in the fog">
       <img id="treeGrey" data-interchange="[images/s-headGrey.jpg, small], [images/l-headGrey.jpg, medium],[images/l-headGrey.jpg, large]" alt="A tree in the fog">
@@ -23,8 +24,7 @@
 
 
 <!--Navigation-->
-
-    <nav data-top-anchor="about" id="mainNav">
+    <nav data-top-anchor="section2" id="mainNav">
     <h2 class="hide">Main Navigation</h2>
       <div class="row">
         <img class="small-6 medium-3 large-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
@@ -32,20 +32,25 @@
             <button class="menu-icon small-3 small-offset-5 columns" type="button" data-toggle></button>
         </div>
         <ul id="navLinks" class="small-12 medium-9 large-9 columns">
-          <li><a href="#header">Top</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#header" id="1">Top</a></li>
+          <li><a href="#about" id="2">About</a></li>
+          <li><a href="#portfolio" id="3">Portfolio</a></li>
+          <li><a href="#contact" id="4">Contact</a></li>
         </ul>
       </div>
     </nav>
 
 <!--About-->
-    <section id="about">
+    <section id="section2">
     <h2>Who I Am</h2>
       <div class="scrollme row">
         <div id="dogPics" class="small-12 medium-6 large-6 columns">
-          <img id="dogGrey" class="animatem columns" data-when="enter" data-from="0" data-to="0.8" data-opacity="0" data-interchange="[images/s-dog.jpg, small], [images/l-dog.jpg, medium],[images/l-dog.jpg, large]" alt="Bear the Bernedoodle">
+<div class="row">
+          <img id="dogGrey" class="animateme small-12 medium-6 large-6 columns" data-when="enter" data-from="0" data-to="0.8" data-opacity="0" data-interchange="[images/s-dogGrey.jpg, small], [images/l-dogGrey.jpg, medium],[images/l-dogGrey.jpg, large]" alt="Bear the Bernedoodle">
+</div>
+<div class="row">
+          <img id="dog" class="columns" data-interchange="[images/s-dog.jpg, small], [images/l-dog.jpg, medium],[images/l-dog.jpg, large]" alt="Bear the Bernedoodle">
+</div>
         </div>
         <div class="small-12 medium-6 large-6 columns">
           <h3>Hi, I'm Ryan!</h3>
@@ -59,7 +64,7 @@
 
 
 <!--Portfolio-->
-    <section id="portfolio">
+    <section id="section3">
     <h2>Portfolio</h2>
       <div class="row">
           <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
@@ -88,7 +93,7 @@
 
 
 <!--Contact-->
-    <section id="contact">
+    <section id="section4">
     <h2>Contact Me</h2>
       <div class="row">
         <div class="small-12 medium-6 large-6 columns">

@@ -253,20 +253,21 @@ nav ul li a:hover
 
 #dogPics
 {
-	
+
 }
 
 #dogGrey
 {
 	margin-top: 20px;
 	z-index: 10;
+	position: absolute;
+	opacity: .5;
 }
 
 #dog
 {
-	margin-top: 10px;
+	margin-top: 20px;
 	z-index: 5;
-	position: absolute;
 }
 
 #dogGrey2
@@ -275,7 +276,7 @@ nav ul li a:hover
 	z-index: 3;
 }
 
-#about
+#section2
 {
 	margin-top: 50px;
 }
@@ -295,6 +296,14 @@ nav ul li a:hover
 	background-color: #316f3f;
 }
 
+@media screen and (min-width: 75.5em)
+{
+	#dogGrey
+	{
+		width: auto;
+	}
+}
+
 @media screen and (min-width: 80em)
 {
 	#resume
@@ -305,7 +314,7 @@ nav ul li a:hover
 
 /*------------------------------Portfolio------------------------------*/
 
-#portfolio
+#section3
 {
 	margin-top: 100px;
 }
@@ -337,7 +346,7 @@ video
 
 /*------------------------------Contact------------------------------*/
 
-#contact
+#section4
 {
 	margin-top: 50px;
 }
