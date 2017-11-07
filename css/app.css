@@ -73,9 +73,19 @@ p
 }
 
 /*------------------------------Nav/Header------------------------------*/
-header img
+
+#tree
 {
 	width: 100%;
+	z-index: 10;
+	position: absolute;
+}
+
+#treeGrey
+{
+	width: 100%;
+	z-index: 5;
+
 }
 
 #headTitle
@@ -173,10 +183,6 @@ nav ul li a:hover
 
 @media screen and (min-width: 48em)
 {
-	nav
-	{
-		text-align: inital;
-	}
 
 	nav ul
 	{
@@ -245,9 +251,28 @@ nav ul li a:hover
 }
 /*------------------------------About------------------------------*/
 
+#dogPics
+{
+	
+}
+
+#dogGrey
+{
+	margin-top: 20px;
+	z-index: 10;
+}
+
 #dog
 {
-	margin-top: 5px;
+	margin-top: 10px;
+	z-index: 5;
+	position: absolute;
+}
+
+#dogGrey2
+{
+	margin-top: 10px;
+	z-index: 3;
 }
 
 #about
@@ -288,7 +313,15 @@ nav ul li a:hover
 .portfolioPiece
 {
 	height: 319px;
-	border: 1px solid #316f3f
+	border: 1px solid #316f3f;
+	background-color: #316f3f;
+	opacity: 1;
+	transition: opacity .25s ease;
+}
+
+.portfolioPiece:hover
+{
+	opacity: .6;
 }
 
 .portfolioPiece :hover
