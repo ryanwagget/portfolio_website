@@ -11,13 +11,14 @@
     <script src="js/ScrollToPlugin.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   </head>
 
 <!--Header-->
   <body>
     <h1 class="hide">Ryan Wagget's Portfolio</h1>
     <header class="scrollme" id="section1">
-      <h2 id="headTitle">Hi, my name is Ryan Wagget and I'm a graphic / motion designer!</h2>
+      <h2 id="headTitle">Hi, my name is Ryan Wagget and I'm a professional graphic / motion designer!</h2>
       <img class="animateme" data-when="exit" data-from="0" data-to=".35" data-opacity="0" id="tree" data-interchange="[images/s-headImage.jpg, small], [images/l-headImage.jpg, medium],[images/l-headImage.jpg, large]" alt="A tree in the fog">
       <img id="treeGrey" data-interchange="[images/s-headGrey.jpg, small], [images/l-headGrey.jpg, medium],[images/l-headGrey.jpg, large]" alt="A tree in the fog">
     </header>
@@ -45,12 +46,12 @@
     <h2>Who I Am</h2>
       <div class="scrollme row">
         <div id="dogPics" class="small-12 medium-6 large-6 columns">
-<div class="row">
-          <img id="dogGrey" class="animateme small-12 medium-6 large-6 columns" data-when="enter" data-from="0" data-to="0.8" data-opacity="0" data-interchange="[images/s-dogGrey.jpg, small], [images/l-dogGrey.jpg, medium],[images/l-dogGrey.jpg, large]" alt="Bear the Bernedoodle">
-</div>
-<div class="row">
-          <img id="dog" class="columns" data-interchange="[images/s-dog.jpg, small], [images/l-dog.jpg, medium],[images/l-dog.jpg, large]" alt="Bear the Bernedoodle">
-</div>
+          <div class="row">
+            <img id="dogGrey" class="animateme small-12 medium-6 large-6 columns" data-when="enter" data-from="0" data-to="0.8" data-opacity="0" data-interchange="[images/s-dogGrey.jpg, small], [images/l-dogGrey.jpg, medium],[images/l-dogGrey.jpg, large]" alt="Bear the Bernedoodle">
+          </div>
+          <div class="row">
+            <img id="dog" class="columns" data-interchange="[images/s-dog.jpg, small], [images/l-dog.jpg, medium],[images/l-dog.jpg, large]" alt="Bear the Bernedoodle">
+          </div>
         </div>
         <div class="small-12 medium-6 large-6 columns">
           <h3>Hi, I'm Ryan!</h3>
@@ -65,7 +66,8 @@
 
 <!--Portfolio-->
     <section id="section3">
-    <h2>Portfolio</h2>
+    <h2 class="hide">Portfolio</h2>
+    <h2>Graphic Design</h2>
       <div class="row">
           <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
           <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
@@ -81,39 +83,51 @@
           <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
           <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
       </div>
-      <div class="row">
-        <video class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
-          	<source src="#" type="/mp4"/>
-              <source src="#" type="/ogv"/>
-              <source src="#" type="/webm"/>
-              Your browser does not support this video.
+
+      <section id="videoSection">
+      <h3 class="hide">Motion Design</h3>
+        <div class="row">
+          <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+            <h2>Motion Design</h2>
+            <p>Below you can find all of my best design work to date! All of the included videos have been created using programs such as Adobe After Effects, Premiere Pro, and Cinema 4D!</p>
+          </div>
+        </div>
+        <div id="videoPlayer" class="row">
+          <video class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+            <source src="#" type="/mp4"/>
+            <source src="#" type="/ogv"/>
+            <source src="#" type="/webm"/>
+            Your browser does not support this video.
           </video>
-      </div>
+        </div>
+      </section>
     </section>
 
 
 <!--Contact-->
-    <section id="section4">
-    <h2>Contact Me</h2>
-      <div class="row">
-        <div class="small-12 medium-6 large-6 columns">
-          <h3>Get in Touch!</h3>
-          <p>If you have any questions or concerns, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
+    <div id="envelope" class="scrollme row">
+      <img class="" id="envelopeFront" src="images/envelope-front.svg" alt="Front of an envelope">
+      <!--data-when="exit" data-from="0.5" data-to="0" data-easing="easeout" data-translatey="300"-->
+      <section id="section4" class="animateme small-12 medium-10 medium-pull-1 large-10 large-offset-1 columns" data-when="exit" data-from="0.6" data-to="0" data-easing="easeout" data-translatey="200">
+      <h2>Contact Me</h2>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+            <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
+          </div>
+          <form action="form.php" method="post" class="small-12 medium-12 large-12 columns">
+              <input type="text" required id="name" name="fullName" placeholder="Name">
+              <input type="email" required id="email" placeholder="Email">
+              <textarea name="comments" id="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
+              <div id="bottom" class="row">
+                <input id="submit" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns">
+                <a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+              </div>
+          </form>
         </div>
-        <form action="form.php" method="post" class="small-12 medium-6 large-6 columns">
-            <input type="text" required id="name" name="fullName" placeholder="Name">
-            <input type="email" required id="email" placeholder="Email">
-            <input type="text" required id="human" placeholder="What is 1+2?">
-            <textarea name="comments" id="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
-            <div id="bottom" class="row">
-              <input id="submit" type="submit" value="Send!" class="small-6 columns">
-              <a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
-                <img src="images/linkedin.svg" alt="LinkedIn Icon">
-              </a>
-            </div>
-        </form>
-      </div>
-    </section>
+      </section>
+    </div>
 
 
 
