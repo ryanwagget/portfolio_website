@@ -162,6 +162,11 @@ nav ul li a:hover
 	color: #316f3f;
 }
 
+nav ul li a:active
+{
+	color: #blue;
+}
+
 @media screen and (min-width: 23.4375em)
 {
 	#burgerMenu
@@ -396,11 +401,6 @@ nav ul li a:hover
 	padding-bottom: 100px;
 }
 
-video
-{
-	background-color: #000;
-}
-
 @media screen and (min-width: 40em)
 {
 	#videoPlayer
@@ -538,8 +538,8 @@ form
 		padding-top: 10px;
 		box-shadow: 0px 0px 12px 1px #878787;
 		z-index: 1;
-		margin-top: -80px;
-		padding-bottom: 50px;
+		margin-top: -130px;
+		padding-bottom: 80px;
 	}
 
 	form
@@ -553,5 +553,50 @@ form
 		position: absolute;
 		z-index: 2;
 		margin-top: 33%
+	}
+}
+
+@media screen and (min-width: 48em)
+{
+	#section4
+	{
+		margin-top: -80px;
+		padding-bottom: 80px;
+	}
+}
+
+@media screen and (min-width: 52.25em)
+{
+	#section4
+	{
+		margin-top: -40px;
+		padding-bottom: 80px;
+	}
+}
+
+@media screen and (min-width: 60em)
+{
+	#section4
+	{
+		margin-top: 30px;
+		padding-bottom: 80px;
+	}
+}
+
+@media screen and (min-width: 64em)
+{
+	#section4
+	{
+		margin-top: 50px;
+		padding-bottom: 80px;
+	}
+}
+
+@media screen and (min-width: 90em)
+{
+	#section4
+	{
+		margin-top: 160px;
+		padding-bottom: 80px;
 	}
 }
