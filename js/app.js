@@ -2,11 +2,10 @@ $(document).foundation()
 
 //variables
 var intro = document.querySelector("#headTitle");
-var color = document.querySelector("#tree");
-var screenHeight = window.innerHeight; //height of browser window
-var treeOpac = document.querySelector("#tree").style.opacity; //opacity of tree image
-var nav = document.querySelector("#mainNav");
+var nav = document.querySelector("#navLinks");
 var links = nav.querySelectorAll("a");
+var header1 = document.querySelectorAll("#headerVideoSmall");
+var vid = document.querySelector("video");
 //Functions
 
 function scrollit(evt){
@@ -22,10 +21,19 @@ function fadeIn()
   TweenMax.to(intro, 2, {top: "20px"});
 }
 
-function colorChange()
+function closeNav()
 {
-  console.log("change");
+  if(window.innerWidth < 768)
+  {
+	   document.getElementById('navLinks').style.display = 'none';
+  }
 }
+
+/*function enableControls()
+{
+  header1.controls = false;
+  vid.controls = true;
+}*/
 
 //listeners
 window.addEventListener("load", fadeIn, false);
@@ -33,13 +41,6 @@ for(var i=0; i<links.length; i++){
   links[i].addEventListener("click", scrollit, false);
 }
 
+document.addEventListener("click", closeNav, false);
 
-
-
-//window.addEventListener("scroll", colorChange, false);
-/*if (window.scrollY + 10) //when distance between origin and screen position increases, tree opacity decreases
-{
-  console.log("working");
-  //treeOpac - 1;
-  TweenMax.to(color, 2, {opacity: 0});
-}*/
+//window.addEventListener("load", enableControls, false);

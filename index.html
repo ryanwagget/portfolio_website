@@ -11,16 +11,25 @@
     <script src="js/ScrollToPlugin.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   </head>
 
 <!--Header-->
   <body>
     <h1 class="hide">Ryan Wagget's Portfolio</h1>
-    <header class="scrollme" id="section1">
+    <header id="section1">
       <h2 id="headTitle">Hi, my name is Ryan Wagget and I'm a professional Graphic / Motion Designer!</h2>
-      <img class="animateme" data-when="exit" data-from="0" data-to=".35" data-opacity="0" id="tree" data-interchange="[images/s-headImage.jpg, small], [images/l-headImage.jpg, medium],[images/l-headImage.jpg, large]" alt="A tree in the fog">
-      <img id="treeGrey" data-interchange="[images/s-headGrey.jpg, small], [images/l-headGrey.jpg, medium],[images/l-headGrey.jpg, large]" alt="A tree in the fog">
+        <video id="headerVideoSmall" autoplay>
+          <source src="video/s-header-vid.mp4" type="video/.mp4"/>
+          <source src="video/s-header-vid.ogv" type="video/ogv"/>
+          <source src="video/s-header-vid.webm" type="video/webm"/>
+          Your browser does not support this video.
+        </video>
+        <video id="headerVideoLarge" autoplay>
+          <source src="video/l-header-vid.mp4" type="video/.mp4"/>
+          <source src="video/l-header-vid.ogv" type="video/ogv"/>
+          <source src="video/l-header-vid.webm" type="video/webm"/>
+          Your browser does not support this video.
+        </video>
     </header>
 
 
@@ -69,19 +78,37 @@
     <h2 class="hide">Portfolio</h2>
     <h2>Graphic Design</h2>
       <div class="row">
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
+          <div id="piece1" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
+          <div id="piece2" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
+          <div id="piece3" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
       </div>
       <div class="row">
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
+          <div id="piece4" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
+          <div id="piece5" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
+          <div id="piece6" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
       </div>
       <div class="row">
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
-          <div class="small-12 medium-4 large-4 columns portfolioPiece"></div>
+          <div id="piece7" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
+          <div id="piece8" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
+          <div id="piece9" class="small-12 medium-4 large-4 columns portfolioPiece">
+            <h4>Title of Piece</h4>
+          </div>
       </div>
 
       <section id="videoSection">
@@ -93,7 +120,7 @@
           </div>
         </div>
         <div id="videoPlayer" class="row">
-          <video class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+          <video class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns" poster="images/intro-thumbnail.png" controls>
             <source src="video/intro.mp4" type="video/mp4"/>
             <source src="video/intro.ogv" type="video/ogv"/>
             <source src="video/intro.webm" type="video/webm"/>
@@ -135,5 +162,6 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/contentWork.js"></script>
   </body>
 </html>

@@ -32,10 +32,29 @@ h3
 	margin-top: 10px;
 }
 
+h4
+{
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	font-family: 'rimouski sb', Arial, sans-serif;
+	margin-top: 129px;
+	margin-bottom: 130px;
+}
+
 p
 {
 	text-align: center;
 	font-family: 'Arial', sans-serif, times;
+}
+
+@media screen and (min-width: 40em)
+{
+	h4
+	{
+		margin-top: 79px;
+		margin-bottom: 80px;
+	}
 }
 
 @media screen and (min-width: 48em)
@@ -50,9 +69,24 @@ p
 		font-size: 36px;
 	}
 
+	h4
+	{
+		margin-top: 99px;
+		margin-bottom: 100px;
+	}
+
 	p
 	{
 		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 64em)
+{
+	h4
+	{
+		margin-top: 129px;
+		margin-bottom: 130px;
 	}
 }
 
@@ -76,18 +110,15 @@ p
 
 /*------------------------------Nav/Header------------------------------*/
 
-#tree
+#headerVideoSmall
 {
 	width: 100%;
 	z-index: 10;
-	position: absolute;
 }
 
-#treeGrey
+#headerVideoLarge
 {
-	width: 100%;
-	z-index: 5;
-
+	display: none;
 }
 
 #headTitle
@@ -96,7 +127,7 @@ p
 	position: absolute;
 	font-size: 36px;
 	color: #316f3f;
-	margin-top: 90px;
+	margin-top: 10px;
 	opacity: 0;
 }
 
@@ -160,12 +191,20 @@ nav ul li a
 nav ul li a:hover
 {
 	color: #316f3f;
+	animation-name: underline;
+	animation-duration: 1s;
 }
 
 nav ul li a:active
 {
 	color: #blue;
 }
+
+/*@keyframes underline
+{
+	from {border-bottom: none;}
+	to {border-bottom: 1px solid #316f3f;}
+}*/
 
 @media screen and (min-width: 23.4375em)
 {
@@ -233,6 +272,24 @@ nav ul li a:active
 
 @media screen and (min-width: 48em)
 {
+
+	#headTitle
+	{
+		width: 50%;
+	}
+
+	#headerVideoLarge
+	{
+		width: 100%;
+		z-index: 10;
+		display: block;
+	}
+
+	#headerVideoSmall
+	{
+		display: none;
+	}
+
 	nav ul
 	{
 		margin-top: 25px;
@@ -303,11 +360,6 @@ nav ul li a:active
 }
 /*------------------------------About------------------------------*/
 
-#dogPics
-{
-
-}
-
 #dogGrey
 {
 	margin-top: 20px;
@@ -373,11 +425,71 @@ nav ul li a:active
 
 .portfolioPiece
 {
-	height: 319px;
+
 	border: 1px solid #316f3f;
 	background-color: #316f3f;
 	opacity: 1;
-	transition: opacity .25s ease;
+	transition: opacity .5s ease;
+	background: url('../images/l-placeholder.jpg') no-repeat;
+	background-size: 115%;
+	background-position: 50%;
+}
+
+.portfolioPiece:hover
+{
+	animation: zoomOut .5s ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoomOut
+{
+	from {background-size: 115%;}
+	to {background-size: 100%;}
+}
+
+#piece1
+{
+
+}
+
+#piece2
+{
+
+}
+
+#piece3
+{
+
+}
+
+#piece4
+{
+
+}
+
+#piece5
+{
+
+}
+
+#piece6
+{
+
+}
+
+#piece7
+{
+
+}
+
+#piece8
+{
+
+}
+
+#piece9
+{
+
 }
 
 .portfolioPiece:hover
