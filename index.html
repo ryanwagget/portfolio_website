@@ -11,6 +11,7 @@
     <script src="js/ScrollToPlugin.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 <!--Header-->
@@ -34,12 +35,13 @@
 
 
 <!--Navigation-->
-    <nav data-top-anchor="section2" id="mainNav">
+<div data-sticky-container>
+    <nav class="row" data-sticky data-options="stickyOn: small" data-margin-top:"0" data-top-anchor="section1:bottom" class="sticky" id="mainNav">
     <h2 class="hide">Main Navigation</h2>
-      <div class="row">
+      <div>
         <img class="small-6 medium-3 large-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
         <div id="burgerMenu" data-responsive-toggle="navLinks" data-hide-for="medium" >
-            <button class="menu-icon small-3 small-offset-5 columns" type="button" data-toggle></button>
+            <button class="menu-icon small-3 small-offset-3 columns" type="button" data-toggle></button>
         </div>
         <ul id="navLinks" class="small-12 medium-9 large-9 columns" data-animate="hinge-in-from-top hinge-out-from-top" data-close-on-click="true">
           <li><a href="#header" id="1">Top</a></li>
@@ -49,8 +51,11 @@
         </ul>
       </div>
     </nav>
+</div>
+
 
 <!--About-->
+    <div id="whitespace"></div>
     <section id="section2">
     <h2>Who I Am</h2>
       <div class="scrollme row">
@@ -64,11 +69,11 @@
         </div>
         <div class="small-12 medium-6 large-6 columns">
           <h3>Hi, I'm Ryan!</h3>
-          <p>I’m a professional graphic and motion designer based in London, Ontario. I love doing all things creative! Whether it’s graphic design, motion design, creating a strong brand identity, constructing 3D models, taking pictures, or designing a website, I’m happy to do it. I’m a highly driven individual who loves a good challenge and enjoys thinking of effective “outside of the box” solutions. I’m also really into travelling, doing new things, and am a huge dog person! The picture to the left is my dog, not me. Thanks for visiting my portfolio!</p>
+          <p>I’m a professional Graphic and Motion designer based in London, Ontario. I love doing all things creative! Whether it’s graphic design, motion design, creating a strong brand identity, constructing 3D models, taking pictures, or designing a website, I’m happy to do it. I’m a highly driven individual who loves a good challenge and enjoys thinking of effective “outside of the box” solutions. I’m also really into travelling, doing new things, and am a huge dog person! The picture to the left is my dog, not me. Thanks for visiting my portfolio!</p>
         </div>
       </div>
       <div class="row">
-        <button id="resume" class="small-6 small-offset-3 medium-4 medium-offset-7 large-4 large-offset-7 columns">Resume</button>
+        <a id="resume" href="includes/resume.pdf" download class="small-6 small-offset-3 medium-4 medium-offset-7 large-4 large-offset-7 columns">Resume</a>
       </div>
     </section>
 
@@ -77,36 +82,48 @@
     <section id="section3">
     <h2 class="hide">Portfolio</h2>
     <h2>Graphic Design</h2>
-      <div class="row">
-          <div id="piece1" class="small-12 medium-4 large-4 columns portfolioPiece">
+
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns lightbox">
+            <i class="fa fa-times fa-2x close-lightbox"></i>
+            <div class="">
+              <img src="images/l-placeholder.jpg" alt="Placeholder Text" class="lightbox-img">
+              <!--<h3>What This Is</h3>
+              <p class="lightbox-desc">Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>-->
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div id="piece1" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-          <div id="piece2" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece2" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-          <div id="piece3" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece3" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
       </div>
       <div class="row">
-          <div id="piece4" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece4" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-          <div id="piece5" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece5" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-          <div id="piece6" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece6" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
       </div>
       <div class="row">
-          <div id="piece7" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece7" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-          <div id="piece8" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece8" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-          <div id="piece9" class="small-12 medium-4 large-4 columns portfolioPiece">
+          <div id="piece9" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
       </div>
@@ -130,26 +147,40 @@
       </section>
     </section>
 
+    <div class="row">
+      <div class="small-12 medium-10 medium-offset-1 large-10 large-offset-1 columns">
+        <h3 id="videoTitle">Title of Work</h3>
+        <p>Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>
+      </div>
+    </div>
+
+    <div id="vidThumbnails" class="row">
+      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumbs"></div>
+      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumbs"></div>
+      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumbs"></div>
+      <div class="small-8 small-pull-2 medium-3 medium-pull-0 large-3 columns thumbs"></div>
+    </div>
+
 
 <!--Contact-->
     <div id="envelope" class="scrollme row">
       <img class="" id="envelopeFront" src="images/envelope-front.svg" alt="Front of an envelope">
-      <!--data-when="exit" data-from="0.5" data-to="0" data-easing="easeout" data-translatey="300"-->
       <section id="section4" class="animateme small-12 medium-10 medium-pull-1 large-10 large-offset-1 columns" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
       <h2>Contact Me</h2>
         <div class="row">
           <div class="small-12 medium-12 large-12 columns">
             <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
           </div>
-          <form action="form.php" method="post" class="small-12 medium-12 large-12 columns">
+          <form action="contact.php" method="post" class="small-12 medium-12 large-12 columns">
               <input type="text" required id="name" name="fullName" placeholder="Name">
               <input type="email" required id="email" placeholder="Email">
+              <input type="color" required id="favColor" placeholder="Color">
               <textarea name="comments" id="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
               <div id="bottom" class="row">
                 <input id="submit" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns">
-                <a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
+                <!--<a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
                   <img src="images/linkedin.svg" alt="LinkedIn Icon">
-                </a>
+                </a>-->
               </div>
           </form>
         </div>
@@ -163,5 +194,6 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/contentWork.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
