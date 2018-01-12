@@ -8,17 +8,15 @@ function redirect_to($location)
 	}
 }
 //echo "connected";
-function submitMessage($name, $email, $message, $direct)
+function submitMessage($name, $email, $message)
 {
 	$to = "ryan@ryanwagget.ca";
 	$subj = "Email from Portfolio Site";
 	$extra = "Reply-to: {$email}";
 	$msg = "Name: ".$name."\n\nEmail: ".$email."n\n\Message: ".$message;
-	$direct = "thankyou.php"; //go create this page
+	//return "Thanks {$name}! Your message was sent succesfully!";
 	//THIS WILL NOT WORK LOCALLY. THIS NEEDS TO BE TESTED ON YOUR HOSTING
-	//mail($to, $subj, $msg, $extra);
-	$direct = $direct."?name={$name}";
-	redirect_to($direct);
+	mail($to, $subj, $msg, $extra);
 }
 
 ?>

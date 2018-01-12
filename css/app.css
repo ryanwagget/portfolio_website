@@ -15,6 +15,11 @@
 	src: url('../fonts/rimouski sb.ttf');
 }
 
+body
+{
+		overflow-x: scroll;
+}
+
 h2
 {
 	font-size: 36px;
@@ -157,16 +162,20 @@ p
 {
 	width: 100%;
 	margin-top: 0px;
+	z-index: 100;
 }
 
 nav
 {
+	margin-top: 0px !important;
 	text-align: center;
 	background-color: #fff;
 	border-top: 1px solid #316f3f;
 	border-bottom: 1px solid #316f3f;
-	z-index: 60000;
+	z-index: 100;
 }
+
+
 
 nav ul
 {
@@ -217,6 +226,14 @@ nav ul li a:focus
 	}
 }
 
+@media screen and (min-width: 26.5625em)
+{
+	#logo
+	{
+		height: 70px;
+	}
+}
+
 @media screen and (min-width: 37.5em)
 {
 	#headTitle
@@ -236,6 +253,12 @@ nav ul li a:focus
 	#logo
 	{
 		clear: both;
+		height: 70px;
+	}
+
+	#navLinks
+	{
+		margin-top: 25px;
 	}
 
 	nav ul
@@ -263,7 +286,7 @@ nav ul li a:focus
 	nav ul li a
 	{
 		color: #757575;
-		margin-left: 20px;
+		margin-left: 35px;
 	}
 
 	nav ul li a:hover
@@ -300,7 +323,15 @@ nav ul li a:focus
 
 	nav ul li a
 	{
-		margin-left: 40px;
+		margin-left: 50px;
+	}
+}
+
+@media screen and (min-width: 57.625em)
+{
+	#navLinks
+	{
+		margin-top: 32px;
 	}
 }
 
@@ -309,6 +340,11 @@ nav ul li a:focus
 	#headTitle
 	{
 		margin-top: 80px;
+	}
+
+	#navLinks
+	{
+		margin-top: 35px;
 	}
 }
 
@@ -320,15 +356,25 @@ nav ul li a:focus
 		margin-top: 100px;
 	}
 
+	#navLinks
+	{
+		margin-top: 25px;
+	}
+
 	nav ul
 	{
 		margin-top: 30px;
-		font-size: 30px;
+		font-size: 26px;
 	}
 
 	nav ul li a
 	{
-		margin-left: 40px;
+		margin-left: 70px;
+	}
+
+	#logo
+	{
+		height: 70px;
 	}
 }
 
@@ -342,7 +388,7 @@ nav ul li a:focus
 
 	nav ul li a
 	{
-		margin-left: 50px;
+		margin-left: 70px;
 	}
 }
 
@@ -362,8 +408,14 @@ nav ul li a:focus
 
 	nav ul li a
 	{
-		margin-left: 50px;
+		margin-left: 80px;
 	}
+
+	#logo
+	{
+		height: 100px;
+	}
+
 }
 
 @media screen and (min-width: 90em)
@@ -371,6 +423,16 @@ nav ul li a:focus
 	#headTitle
 	{
 		margin-top: 180px;
+	}
+
+	#navLinks
+	{
+		margin-top: 30px;
+	}
+
+	nav ul li a
+	{
+		margin-left: 110px;
 	}
 }
 
@@ -463,7 +525,7 @@ nav ul li a:focus
 {
 	border: 1px solid #316f3f;
 	/*transition: opacity .5s ease;*/
-	background: url('../images/l-placeholder.jpg') no-repeat;
+	background: no-repeat;
 	background-size: 115%;
 	background-position: 50%;
 	cursor: pointer;
@@ -491,6 +553,7 @@ nav ul li a:focus
 {
 	transition: opacity .5s ease;
 	opacity: 0;
+	z-index: 20;
 }
 
 .portfolioPiece:hover h4
@@ -524,10 +587,12 @@ nav ul li a:focus
 {
 	position: absolute;
 	display: none;
-	height: 100vh;
 	background-color: #fff;
 	z-index: 50;
 	left: 0;
+	border: 2px solid #316f3f;
+	box-shadow: 0px 0px 50px #000;
+	overflow-x: scroll;
 }
 
 .lightbox-img
@@ -596,10 +661,6 @@ nav ul li a:focus
 
 }
 
-#piece9
-{
-
-}
 
 #videoSection
 {
@@ -620,9 +681,19 @@ nav ul li a:focus
 .thumbs
 {
 	margin-top: 50px;
-	background: url('../images/thumb-placeholder.jpg') center no-repeat;
+	background: url('../motion/rw-intro_thumb.png') center no-repeat;
 	height: 140px;
 	cursor: pointer;
+}
+
+.thumb2
+{
+	background: url('../motion/lotr-teaser_thumb.png') center no-repeat;
+}
+
+.thumb3
+{
+	background: url('../motion/soccer-ad_thumb.jpg') center no-repeat;
 }
 
 @media screen and (min-width: 40em)
@@ -673,8 +744,8 @@ nav ul li a:focus
 {
 	.lightbox
 	{
-		width: 83.25%;
-		margin-left: 120px;
+		width: 85%;
+		margin-left: 108px;
 	}
 }
 

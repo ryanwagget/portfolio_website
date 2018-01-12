@@ -13,9 +13,9 @@
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  <body>
 
 <!--Header-->
-  <body>
     <h1 class="hide">Ryan Wagget's Portfolio</h1>
     <header id="section1">
       <h2 id="headTitle">Hi, my name is Ryan Wagget and I'm a professional Graphic / Motion Designer!</h2>
@@ -40,7 +40,7 @@
     <h2 class="hide">Main Navigation</h2>
       <div>
         <img class="small-6 medium-3 large-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
-        <div id="burgerMenu" data-responsive-toggle="navLinks" data-hide-for="medium" >
+        <div id="burgerMenu" data-responsive-toggle="navLinks" data-hide-for="medium">
             <button class="menu-icon small-3 small-offset-3 columns" type="button" data-toggle></button>
         </div>
         <ul id="navLinks" class="small-12 medium-9 large-9 columns" data-animate="hinge-in-from-top hinge-out-from-top" data-close-on-click="true">
@@ -88,14 +88,14 @@
             <i class="fa fa-times fa-2x close-lightbox"></i>
             <div class="">
               <img src="images/l-placeholder.jpg" alt="Placeholder Text" class="lightbox-img">
-              <!--<h3>What This Is</h3>
-              <p class="lightbox-desc">Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>-->
+              <h3 class="lightbox-title">What This Is</h3>
+              <p class="lightbox-desc">Description of work, Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>
             </div>
           </div>
 
         </div>
-        <div class="row">
-          <div id="piece1" class="small-12 medium-4 large-4 columns green portfolioPiece">
+        <div id="content" class="row">
+          <!-- <div id="piece1" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
           <div id="piece2" class="small-12 medium-4 large-4 columns green portfolioPiece">
@@ -104,8 +104,6 @@
           <div id="piece3" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-      </div>
-      <div class="row">
           <div id="piece4" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
@@ -115,8 +113,6 @@
           <div id="piece6" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
-      </div>
-      <div class="row">
           <div id="piece7" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
           </div>
@@ -125,7 +121,7 @@
           </div>
           <div id="piece9" class="small-12 medium-4 large-4 columns green portfolioPiece">
             <h4>Title of Piece</h4>
-          </div>
+          </div> -->
       </div>
 
       <section id="videoSection">
@@ -137,7 +133,7 @@
           </div>
         </div>
         <div id="videoPlayer" class="row">
-          <video class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns" poster="images/intro-thumbnail.png" controls>
+          <video id="videoTag" class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns" poster="images/intro-thumbnail.png" controls>
             <source src="video/intro.mp4" type="video/mp4"/>
             <source src="video/intro.ogv" type="video/ogv"/>
             <source src="video/intro.webm" type="video/webm"/>
@@ -149,16 +145,15 @@
 
     <div class="row">
       <div class="small-12 medium-10 medium-offset-1 large-10 large-offset-1 columns">
-        <h3 id="videoTitle">Title of Work</h3>
-        <p>Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>
-      </div>
+        <h3 id="videoTitle">Personal Intro</h3>
+        <p id="videoDesc">This is a video I created in Adobe After Effects as an intro to my personal brand. My whole brand is based around "thinking outside of the box". The beginning of the video starts very grey and not very much is occurring. As the video progresses, the animations become more intricate until its eventually revealed that the first portion of the video occurred inside of "the box". Once this is revealed, the screen is filled with colour that represents "creativity". The video eventually ends off by all of the colour going into my name to represent that I am the one doing the creative thinking.</div>
     </div>
 
     <div id="vidThumbnails" class="row">
-      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumbs"></div>
-      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumbs"></div>
-      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumbs"></div>
-      <div class="small-8 small-pull-2 medium-3 medium-pull-0 large-3 columns thumbs"></div>
+      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumb1 thumbs"></div>
+      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumb2 thumbs"></div>
+      <div class="small-8 small-pull-2 medium-3 medium-offset-0 large-3 columns thumb3 thumbs"></div>
+      <!--<div class="small-8 small-pull-2 medium-3 medium-pull-0 large-3 columns thumbs"></div>-->
     </div>
 
 
@@ -171,11 +166,11 @@
           <div class="small-12 medium-12 large-12 columns">
             <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
           </div>
-          <form action="contact.php" method="post" class="small-12 medium-12 large-12 columns">
-              <input type="text" required id="name" name="fullName" placeholder="Name">
-              <input type="email" required id="email" placeholder="Email">
-              <input type="color" required id="favColor" placeholder="Color">
-              <textarea name="comments" id="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
+          <form action="index.php" method="post" class="small-12 medium-12 large-12 columns">
+              <input type="text" required id="name" name="name" placeholder="Name">
+              <input type="email" required id="email" name="email" placeholder="Email">
+              <input type="color" required id="favColor" name="favColor" placeholder="Color">
+              <textarea name="comments" id="comments" name="" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
               <div id="bottom" class="row">
                 <input id="submit" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns">
                 <!--<a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
@@ -195,5 +190,6 @@
     <script src="js/app.js"></script>
     <script src="js/contentWork.js"></script>
     <script src="js/lightbox.js"></script>
+    <!--<script src="js/modules/videos.js"></script>-->
   </body>
 </html>

@@ -7,14 +7,13 @@ if(isset($_POST['submit']))
   $email = $_POST['email'];
   $color = $_POST['favColor'];
   $message = $_POST['message'];
-  $direct = "thankyou.php";
+
   //echo $message;
   if($color === "")
   {
     //echo"Huamn";
-    $sendMail = submitMessage($name, $email, $message, $direct);
+    submitMessage($name, $email, $message);
   }
-
 }
 
 ?>
