@@ -16,7 +16,6 @@
 
     function showThumbs(data)
     {
-
       let content = document.querySelector('#content');
       data.forEach(thumb =>
       {
@@ -62,7 +61,6 @@ function popLightbox()
 
       lb.style.display = "block";
 
-
       let lightboxImg = document.querySelector('.lightbox-img').src = "graphic/" + images_link;
   		let lightboxTitle = document.querySelector('.lightbox-title').textContent = images_title;
   		let lightboxDesc = document.querySelector('.lightbox-desc').textContent = images_desc;
@@ -72,7 +70,6 @@ function popLightbox()
 
 function closelightbox()
 {
-  //debugger;
   let lightbox = document.querySelector('.lightbox');
   lightbox.style.display = "none";
 }

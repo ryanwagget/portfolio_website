@@ -621,47 +621,6 @@ nav ul li a:focus
 	position: absolute;
 }
 
-#piece1
-{
-
-}
-
-#piece2
-{
-
-}
-
-#piece3
-{
-
-}
-
-#piece4
-{
-
-}
-
-#piece5
-{
-
-}
-
-#piece6
-{
-
-}
-
-#piece7
-{
-
-}
-
-#piece8
-{
-
-}
-
-
 #videoSection
 {
 	margin-top: 350px;
@@ -678,22 +637,34 @@ nav ul li a:focus
 	margin-top: 0px;
 }
 
+#vidThumbnails img
+{
+	border: 2px solid #316f3f;
+	margin-top: 30px;
+}
+
+/*#vidThumbnails img::selection
+{
+	box-shadow: 0px 0px 50px #000;
+	background-color: blue;*/
+}
+
 .thumbs
 {
 	margin-top: 50px;
-	background: url('../motion/rw-intro_thumb.png') center no-repeat;
+	/*background: url('../motion/rw-intro_thumb.png') center no-repeat;*/
 	height: 140px;
 	cursor: pointer;
 }
 
 .thumb2
 {
-	background: url('../motion/lotr-teaser_thumb.png') center no-repeat;
+	/*background: url('../motion/lotr-teaser_thumb.png') center no-repeat;*/
 }
 
 .thumb3
 {
-	background: url('../motion/soccer-ad_thumb.jpg') center no-repeat;
+	/*background: url('../motion/soccer-ad_thumb.jpg') center no-repeat;*/
 }
 
 @media screen and (min-width: 40em)
@@ -702,6 +673,7 @@ nav ul li a:focus
 	{
 		background-size: 150px;
 	}
+
 	#videoPlayer
 	{
 		background: none;
@@ -752,6 +724,11 @@ nav ul li a:focus
 /*------------------------------Contact------------------------------*/
 
 #section4
+{
+	display: none;
+}
+
+#section5
 {
 	margin-top: 350px;
 }
@@ -805,27 +782,27 @@ textarea:-moz-placeholder
 
 }
 
-#name
+.name
 {
 	pointer-events: all;
 }
 
-#email
+.email
 {
 	pointer-events: all;
 }
 
-#comments
+.comments
 {
 	pointer-events: all;
 }
 
-#favColor
+.favColor
 {
 	display:none;
 }
 
-#submit
+.submit
 {
 	background-color: #fff;
 	font-size: 18.22px;
@@ -839,13 +816,18 @@ textarea:-moz-placeholder
 	transition: background-color 1s ease;
 }
 
-#submit:hover
+#submitSmall
+{
+	margin-left: 10px;
+}
+
+.submit:hover
 {
 	color: #fff;
 	background-color: #316f3f;
 }
 
-#linkedIn
+.linkedIn
 {
 	width: 41px;
 	height: 41px;
@@ -856,7 +838,7 @@ form
 	margin-bottom: 20px;
 }
 
-#bottom
+.bottom
 {
 	margin: 0 auto;
 }
@@ -868,6 +850,12 @@ form
 
 @media screen and (min-width: 40em)
 {
+
+	#section5
+	{
+		display: none;
+		position: absolute;
+	}
 
 	#envelope
 	{
@@ -887,6 +875,7 @@ form
 		z-index: 1;
 		margin-top: -130px;
 		padding-bottom: 80px;
+		display:inherit;
 	}
 
 	form
@@ -896,13 +885,13 @@ form
 
 	#envelopeFront
 	{
-		display: inline;
+		display: block;
 		position: absolute;
 		z-index: 2;
 		margin-top: 33%
 	}
 
-	#submit
+	.submit
 	{
 		pointer-events: all;
 	}

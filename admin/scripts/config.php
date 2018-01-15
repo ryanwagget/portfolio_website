@@ -1,5 +1,5 @@
 <?php
-//collects all of our files together, so you can access everything, not connect tho
+//collects all files so you can access all, not connect tho
 require_once("mail.php");
 
 ?>

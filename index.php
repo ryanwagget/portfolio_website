@@ -6,15 +6,13 @@ error_reporting(E_ALL);
 require_once("admin/scripts/config.php");
 if(isset($_POST['submit']))
 {
-  //echo "Good for you, you can click a button ;)";
   $name = $_POST['name'];
   $email = $_POST['email'];
   $color = $_POST['favColor'];
-  $message = $_POST['message'];
-  //echo $message;
+  $message = $_POST['comments'];
+
   if($color === "")
   {
-    //echo"Huamn";
     $sendMail = submitMessage($name, $email, $message);
   }
 }
@@ -36,6 +34,25 @@ if(isset($_POST['submit']))
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="favicon.ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   </head>
   <body>
 
@@ -44,13 +61,13 @@ if(isset($_POST['submit']))
     <header id="section1">
       <h2 id="headTitle">Hi, my name is Ryan Wagget and I'm a professional Graphic / Motion Designer!</h2>
         <video id="headerVideoSmall" autoplay>
-          <source src="video/s-header-vid.mp4" type="video/.mp4"/>
+          <source src="video/s-header-vid.mp4" type="video/mp4"/>
           <source src="video/s-header-vid.ogv" type="video/ogv"/>
           <source src="video/s-header-vid.webm" type="video/webm"/>
           Your browser does not support this video.
         </video>
         <video id="headerVideoLarge" autoplay>
-          <source src="video/l-header-vid.mp4" type="video/.mp4"/>
+          <source src="video/l-header-vid.mp4" type="video/mp4"/>
           <source src="video/l-header-vid.ogv" type="video/ogv"/>
           <source src="video/l-header-vid.webm" type="video/webm"/>
           Your browser does not support this video.
@@ -60,7 +77,7 @@ if(isset($_POST['submit']))
 
 <!--Navigation-->
 <div data-sticky-container>
-    <nav class="row" data-sticky data-options="stickyOn: small" data-margin-top:"0" data-top-anchor="section1:bottom" class="sticky" id="mainNav">
+    <nav data-sticky data-options="stickyOn: small" data-margin-top:"0" data-top-anchor="section1:bottom" class="row sticky" id="mainNav">
     <h2 class="hide">Main Navigation</h2>
       <div>
         <img class="small-6 medium-3 large-3 columns" id="logo" src="images/logo.svg" alt="Ryan Wagget logo">
@@ -149,7 +166,6 @@ if(isset($_POST['submit']))
       </div>
 
       <section id="videoSection">
-      <h3 class="hide">Motion Design</h3>
         <div class="row">
           <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
             <h2>Motion Design</h2>
@@ -158,9 +174,9 @@ if(isset($_POST['submit']))
         </div>
         <div id="videoPlayer" class="row">
           <video id="videoTag" class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns" poster="images/intro-thumbnail.png" controls>
-            <source src="video/intro.mp4" type="video/mp4"/>
-            <source src="video/intro.ogv" type="video/ogv"/>
-            <source src="video/intro.webm" type="video/webm"/>
+            <source src="motion/intro.mp4" type="video/mp4"/>
+            <source src="motion/intro.ogv" type="video/ogv"/>
+            <source src="motion/intro.webm" type="video/webm"/>
             Your browser does not support this video.
           </video>
         </div>
@@ -174,29 +190,36 @@ if(isset($_POST['submit']))
     </div>
 
     <div id="vidThumbnails" class="row">
-      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumb1 thumbs"></div>
-      <div class="small-8 small-offset-2 medium-3 medium-offset-0 large-3 columns thumb2 thumbs"></div>
-      <div class="small-8 small-pull-2 medium-3 medium-offset-0 large-3 columns thumb3 thumbs"></div>
+      <div class="small-6 small-offset-3 medium-3  medium-offset-0 large-3 columns thumb1 thumbs">
+        <img src="motion/rw-intro_thumb.png" alt="Personal intro video thumbnail">
+      </div>
+      <div class="small-6  small-offset-3 medium-3 medium-pull-0 large-3 columns thumb2 thumbs">
+        <img src="motion/lotr-teaser_thumb.png" alt="Lord of the Rings teaser trailer video thumbnail">
+      </div>
+      <div class="small-6 small-offset-3 medium-3 medium-offset-0 small-pull-3 large-3 columns thumb3 thumbs">
+        <img src="motion/soccer-ad_thumb.jpg" alt="World Soccer Awards ad video thumbnail">
+      </div>
       <!--<div class="small-8 small-pull-2 medium-3 medium-pull-0 large-3 columns thumbs"></div>-->
     </div>
 
 
 <!--Contact-->
     <div id="envelope" class="scrollme row">
-      <img class="" id="envelopeFront" src="images/envelope-front.svg" alt="Front of an envelope">
-      <section id="section4" class="animateme small-12 medium-10 medium-pull-1 large-10 large-offset-1 columns" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
+      <img id="envelopeFront" src="images/envelope-front.svg" alt="Front of an envelope">
+
+      <section id="section4" class="animateme small-12 medium-10 medium-offset-1 large-10 large-offset-1 columns" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
       <h2>Contact Me</h2>
         <div class="row">
           <div class="small-12 medium-12 large-12 columns">
             <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
           </div>
           <form action="index.php" method="post" class="small-12 medium-12 large-12 columns">
-              <input type="text" required id="name" name="name" placeholder="Name">
-              <input type="email" required id="email" name="email" placeholder="Email">
-              <input type="color" required id="favColor" name="favColor" placeholder="Color">
-              <textarea name="comments" id="comments" name="" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
-              <div id="bottom" class="row">
-                <input id="submit" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns">
+              <input type="text" required class="name" name="name" placeholder="Name">
+              <input type="email" required class="email" name="email" placeholder="Email">
+              <input type="color" class="favColor" name="favColor">
+              <textarea name="comments" class="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
+              <div class="bottom row">
+                <input name="submit" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns submit">
                 <!--<a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
                   <img src="images/linkedin.svg" alt="LinkedIn Icon">
                 </a>-->
@@ -204,6 +227,28 @@ if(isset($_POST['submit']))
           </form>
         </div>
       </section>
+
+      <section id="section5" class="small-12 medium-10 medium-pull-1 large-10 large-offset-1 columns" data-hide-for:"medium" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
+      <h2>Contact Me</h2>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+            <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
+          </div>
+          <form action="index.php" method="post" class="small-12 medium-12 large-12 columns">
+              <input type="text" required class="name" name="name" placeholder="Name">
+              <input type="email" required class="email" name="email" placeholder="Email">
+              <input type="color" class="favColor" name="favColor">
+              <textarea name="comments" class="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
+              <div class=" bottom row">
+                <input id="submitSmall" name="submit" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns submit">
+                <!--<a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>-->
+              </div>
+          </form>
+        </div>
+      </section>
+
     </div>
 
 
