@@ -6,6 +6,12 @@ $pass = "yoyoryan8"; //for mac
 $url = "localhost:3306";
 $db = "rywagget_db_graphic";
 
+//$user = "root";
+//$pass = "root"; //for windows
+//$pass = "root"; //for mac
+//$url = "localhost";
+//$db = "db_graphic";
+
 //$link = mysqli_connect($url, $user, $pass, $db); //for windows
 $link = mysqli_connect($url, $user, $pass, $db, "8889"); //for mac
 

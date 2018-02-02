@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 require_once("admin/scripts/config.php");
 if(isset($_POST['submit']))
 {
+  //echo "works";
   $name = $_POST['name'];
   $email = $_POST['email'];
   $color = $_POST['favColor'];
@@ -35,7 +36,7 @@ if(isset($_POST['submit']))
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+    <!--<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
@@ -51,7 +52,7 @@ if(isset($_POST['submit']))
   <link rel="manifest" href="favicon.ico/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">-->
 
   </head>
   <body>
@@ -169,7 +170,7 @@ if(isset($_POST['submit']))
         <div class="row">
           <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
             <h2>Motion Design</h2>
-            <p>Below you can find all of my best design work to date! All of the included videos have been created using programs such as Adobe After Effects, Premiere Pro, and Cinema 4D!</p>
+            <p>Below you can find all of my best motion design work to date! All of the included videos have been created using programs such as Adobe After Effects, Premiere Pro, and Cinema 4D!</p>
           </div>
         </div>
         <div id="videoPlayer" class="row">
@@ -180,6 +181,8 @@ if(isset($_POST['submit']))
             Your browser does not support this video.
           </video>
         </div>
+
+
       </section>
     </section>
 
@@ -194,10 +197,13 @@ if(isset($_POST['submit']))
         <img src="motion/rw-intro_thumb.png" alt="Personal intro video thumbnail">
       </div>
       <div class="small-6  small-offset-3 medium-3 medium-pull-0 large-3 columns thumb2 thumbs">
-        <img src="motion/lotr-teaser_thumb.png" alt="Lord of the Rings teaser trailer video thumbnail">
+        <img src="motion/mg-thumb.jpg" alt="The Amazing Adventures of Melvin Gordon video thumbnail">
       </div>
-      <div class="small-6 small-offset-3 medium-3 medium-offset-0 small-pull-3 large-3 columns thumb3 thumbs">
+      <div class="small-6 small-offset-3 medium-3 medium-offset-0  large-3 columns thumb3 thumbs">
         <img src="motion/soccer-ad_thumb.jpg" alt="World Soccer Awards ad video thumbnail">
+      </div>
+      <div class="small-6 small-pull-3 medium-3 medium-pull-0 medium-offset-0 large-3 large-pull-0 columns thumb4 thumbs">
+        <img src="motion/space-animation_thumb.png" alt="Galaga video thumbnail">
       </div>
       <!--<div class="small-8 small-pull-2 medium-3 medium-pull-0 large-3 columns thumbs"></div>-->
     </div>
@@ -211,7 +217,7 @@ if(isset($_POST['submit']))
       <h2>Contact Me</h2>
         <div class="row">
           <div class="small-12 medium-12 large-12 columns">
-            <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
+            <p>If you’re interested in working with me, feel free to shoot me an email and I’ll get back to you as soon as I can!</p>
           </div>
           <form action="index.php" method="post" class="small-12 medium-12 large-12 columns">
               <input type="text" required class="name" name="name" placeholder="Name">
@@ -232,7 +238,7 @@ if(isset($_POST['submit']))
       <h2>Contact Me</h2>
         <div class="row">
           <div class="small-12 medium-12 large-12 columns">
-            <p>If you’re interested in working with me, feel free to shoot me an email and i’ll get back to you as soon as I can!</p>
+            <p>If you’re interested in working with me, feel free to shoot me an email and I’ll get back to you as soon as I can!</p>
           </div>
           <form action="index.php" method="post" class="small-12 medium-12 large-12 columns">
               <input type="text" required class="name" name="name" placeholder="Name">
@@ -257,7 +263,7 @@ if(isset($_POST['submit']))
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/contentWork.js"></script>
+    <!--<script src="js/contentWork.js"></script>-->
     <script src="js/lightbox.js"></script>
     <!--<script src="js/modules/videos.js"></script>-->
   </body>
