@@ -481,6 +481,7 @@ nav ul li a:focus
 	text-align: center;
 	transition: color .5s ease;
 	transition: background-color .5s ease;
+	margin-top: 20px;
 }
 
 #resume:hover
@@ -489,11 +490,74 @@ nav ul li a:focus
 	background-color: #316f3f;
 }
 
+#socials
+{
+	text-align: center;
+}
+
+#socials a:first-child img
+{
+	margin-left: 0px;
+}
+
+#socials a img
+{
+	height: 30px;
+	margin-left: 40px;
+}
+
+#socials a:hover
+{
+	filter: opacity(60%);
+	-webkit-filter: opacity(60%);
+}
+
+@media screen and (min-width: 26.5625em)
+{
+	#socials a img
+	{
+		height: 30px;
+		margin-left: 50px;
+	}
+}
+
 @media screen and (min-width: 48em)
 {
 	#resume
 	{
 		font-size: 24px;
+		margin-top: 0px;
+	}
+
+	#section2 p
+	{
+		line-height: 27px;
+	}
+
+	#socials
+	{
+		margin-top: 20px;
+	}
+
+	#socials a img
+	{
+		height: 30px;
+		margin-left: 60px;
+	}
+}
+
+@media screen and (min-width: 64em)
+{
+
+	#socials
+	{
+		margin-top: 25px;
+	}
+
+	#socials a img
+	{
+		height: 35px;
+		margin-left: 110px;
 	}
 }
 
@@ -519,6 +583,11 @@ nav ul li a:focus
 {
 	margin-top: 350px;
 	position: relative;
+}
+
+#section3 h2
+{
+	margin-bottom: 50px;
 }
 
 .portfolioPiece
@@ -593,6 +662,7 @@ nav ul li a:focus
 	border: 2px solid #316f3f;
 	box-shadow: 0px 0px 50px #000;
 	overflow-x: scroll;
+
 }
 
 .lightbox-img
@@ -621,6 +691,16 @@ nav ul li a:focus
 	position: absolute;
 }
 
+.lightbox-seeMore
+{
+	font-size: 1em;
+	color: #316f3f;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 49%;
+	margin-bottom: 10px;
+}
+
 #videoSection
 {
 	margin-top: 350px;
@@ -629,7 +709,9 @@ nav ul li a:focus
 #videoPlayer
 {
 	background: url('../images/s-videoBg.jpg') center no-repeat;
+	background-size: 100vw;
 	padding-bottom: 100px;
+	overflow: visible;
 }
 
 #videoTitle
@@ -637,34 +719,35 @@ nav ul li a:focus
 	margin-top: 0px;
 }
 
-#vidThumbnails img
+.vidThumbnails img
 {
-	border: 2px solid #316f3f;
+	border: 4px solid #316f3f;
 	margin-top: 30px;
 }
 
 /*#vidThumbnails img::selection
 {
 	box-shadow: 0px 0px 50px #000;
-	background-color: blue;*/
-}
+	background-color: blue;
+}*/
 
 .thumbs
 {
 	margin-top: 50px;
 	/*background: url('../motion/rw-intro_thumb.png') center no-repeat;*/
 	height: 140px;
+
+}
+
+.thumbs:active
+{
+	opacity: 0.6;
+
+}
+
+.thumbs:hover
+{
 	cursor: pointer;
-}
-
-.thumb2
-{
-	/*background: url('../motion/lotr-teaser_thumb.png') center no-repeat;*/
-}
-
-.thumb3
-{
-	/*background: url('../motion/soccer-ad_thumb.jpg') center no-repeat;*/
 }
 
 @media screen and (min-width: 40em)
@@ -684,7 +767,7 @@ nav ul li a:focus
 	{
 
 		background: url('../images/l-videoBg.jpg') center no-repeat;
-		background-size: contain;
+		background-size: 100vw;
 	}
 }
 
@@ -700,7 +783,7 @@ nav ul li a:focus
 {
 	#videoPlayer
 	{
-		
+
 	}
 }
 

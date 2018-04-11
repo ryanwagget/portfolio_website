@@ -51,11 +51,12 @@ function popLightbox()
 
     function addContent(data)
     {
-      const {images_link, images_title, images_desc} = data;
+      const {images_link, images_title, images_desc, images_behance} = data;
       var lb = document.querySelector('.lightbox');
       var lbClose = document.querySelector('.close-lightbox');
       var lbImage = document.querySelector('.lightbox-img');
       var lbDesc = document.querySelector('.lightbox-desc');
+      var lbMore = document.querySelector('.lightbox-seeMore');
 
       lbClose.addEventListener('click', closelightbox ,false);
 
@@ -64,6 +65,7 @@ function popLightbox()
       let lightboxImg = document.querySelector('.lightbox-img').src = "graphic/" + images_link;
   		let lightboxTitle = document.querySelector('.lightbox-title').textContent = images_title;
   		let lightboxDesc = document.querySelector('.lightbox-desc').textContent = images_desc;
+      let lightboxMore = document.querySelector('.lightbox-seeMore').href = images_behance;
     }
 
 
