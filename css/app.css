@@ -8,6 +8,11 @@
 }
 
 
+.studySpace
+{
+	margin-top: 50px;
+}
+
 
 @font-face
 {
@@ -444,6 +449,32 @@ nav ul li a:focus
 		margin-top: 350px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------About------------------------------*/
 
 #dogGrey
@@ -577,6 +608,25 @@ nav ul li a:focus
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------Portfolio------------------------------*/
 
 #section3
@@ -586,6 +636,16 @@ nav ul li a:focus
 }
 
 #section3 h2
+{
+	margin-bottom: 50px;
+}
+
+#section4
+{
+	margin-top: 600px;
+}
+
+#section4 h2
 {
 	margin-bottom: 50px;
 }
@@ -616,6 +676,51 @@ nav ul li a:focus
 {
 	from {background-size: 115%;}
 	to {background-size: 100%;}
+}
+
+#piece1
+{
+	background: url('../graphic/surfs-up_thumb.jpg') center no-repeat;
+}
+
+#piece2
+{
+	background: url('../graphic/olympic_thumb.jpg') center no-repeat;
+}
+
+#piece3
+{
+	background: url('../graphic/mg-shirt_thumb.jpg') center no-repeat;
+}
+
+#piece4
+{
+	background: url('../graphic/organ_thumb.jpg') center no-repeat;
+}
+
+#piece5
+{
+	background: url('../graphic/flashback_thumb.jpg') center no-repeat;
+}
+
+#piece6
+{
+	background: url('../graphic/pearl-jam_thumb.jpg') center no-repeat;
+}
+
+#piece7
+{
+	background: url('../graphic/cube_thumb.jpg') center no-repeat;
+}
+
+#piece8
+{
+	background: url('../graphic/hub-tones_thumb.jpg') center no-repeat;
+}
+
+#piece9
+{
+	background: url('../graphic/cultivate-dance_logo-thumb.png') center no-repeat;
 }
 
 .portfolioPiece h4
@@ -689,6 +794,7 @@ nav ul li a:focus
 	color: #316f3f;
 	font-size: 20px;
 	position: absolute;
+	font-weight: bold;
 }
 
 .lightbox-seeMore
@@ -717,6 +823,16 @@ nav ul li a:focus
 #videoTitle
 {
 	margin-top: 0px;
+}
+
+.caseStudy
+{
+	font-size: 1.5em;
+	color: #316f3f;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 43%;
+	display: none;
 }
 
 .vidThumbnails img
@@ -806,12 +922,12 @@ nav ul li a:focus
 
 /*------------------------------Contact------------------------------*/
 
-#section4
+#section5
 {
 	display: none;
 }
 
-#section5
+#section6
 {
 	margin-top: 350px;
 }
@@ -934,7 +1050,7 @@ form
 @media screen and (min-width: 40em)
 {
 
-	#section5
+	#section6
 	{
 		display: none;
 		position: absolute;
@@ -950,7 +1066,7 @@ form
 		pointer-events: none;
 	}
 
-	#section4
+	#section5
 	{
 		background-color: #fff;
 		padding-top: 10px;
@@ -983,7 +1099,7 @@ form
 
 @media screen and (min-width: 48em)
 {
-	#section4
+	#section5
 	{
 		margin-top: -80px;
 		padding-bottom: 80px;
@@ -992,7 +1108,7 @@ form
 
 @media screen and (min-width: 52.25em)
 {
-	#section4
+	#section5
 	{
 		margin-top: -40px;
 		padding-bottom: 80px;
@@ -1001,7 +1117,7 @@ form
 
 @media screen and (min-width: 60em)
 {
-	#section4
+	#section5
 	{
 		margin-top: 30px;
 		padding-bottom: 80px;
@@ -1010,7 +1126,7 @@ form
 
 @media screen and (min-width: 64em)
 {
-	#section4
+	#section5
 	{
 		margin-top: 50px;
 		padding-bottom: 80px;
@@ -1019,7 +1135,7 @@ form
 
 @media screen and (min-width: 90em)
 {
-	#section4
+	#section5
 	{
 		margin-top: 160px;
 		padding-bottom: 80px;

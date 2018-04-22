@@ -36,7 +36,7 @@ if(isset($_POST['submit']))
     <script src='js/scrollme-master/jquery.scrollme.js'></script>
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
@@ -45,14 +45,14 @@ if(isset($_POST['submit']))
   <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+  <!-- <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png"> -->
   <link rel="manifest" href="favicon.ico/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">-->
+  <meta name="theme-color" content="#ffffff">
 
   </head>
   <body>
@@ -76,6 +76,20 @@ if(isset($_POST['submit']))
     </header>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--Navigation-->
 <div data-sticky-container>
     <nav data-sticky data-options="stickyOn: small" data-margin-top:"0" data-top-anchor="section1:bottom" class="row sticky" id="mainNav">
@@ -86,14 +100,27 @@ if(isset($_POST['submit']))
             <button class="menu-icon small-3 small-offset-3 columns" type="button" data-toggle></button>
         </div>
         <ul id="navLinks" class="small-12 medium-9 large-9 columns" data-animate="hinge-in-from-top hinge-out-from-top" data-close-on-click="true">
-          <li><a href="#header" id="1">Top</a></li>
           <li><a href="#about" id="2">About</a></li>
-          <li><a href="#portfolio" id="3">Portfolio</a></li>
-          <li><a href="#contact" id="4">Contact</a></li>
+          <li><a href="#portfolio" id="3">Motion</a></li>
+          <li><a href="#videoSection" id="4">Graphic</a></li>
+          <li><a href="#contact" id="5">Contact</a></li>
         </ul>
       </div>
     </nav>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--About-->
@@ -116,13 +143,13 @@ if(isset($_POST['submit']))
       </div>
       <div class="row">
         <div id="socials" class="small-12 medium-6 large-6 columns">
-          <a href="https://www.linkedin.com/in/ryanwagget/">
+          <a href="https://www.linkedin.com/in/ryanwagget/" target="_blank">
             <img src="images/linkedin.svg">
           </a>
-          <a href="https://www.behance.net/ryanwagget890d">
+          <a href="https://www.behance.net/ryanwagget890d" target="_blank">
             <img src="images/behance.svg">
           </a>
-          <a href="https://vimeo.com/ryanwagget">
+          <a href="https://vimeo.com/ryanwagget" target="_blank">
             <img src="images/vimeo.svg">
           </a>
         </div>
@@ -131,53 +158,27 @@ if(isset($_POST['submit']))
     </section>
 
 
-<!--Portfolio-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Motion Design-->
     <section id="section3">
-    <h2 class="hide">Portfolio</h2>
-    <h2>Graphic Design</h2>
-
-        <div class="row">
-          <div class="small-12 medium-12 large-12 columns lightbox">
-            <i class="fa fa-times fa-2x close-lightbox"></i>
-            <div class="">
-              <img src="" alt="Placeholder Text" class="lightbox-img">
-              <h3 class="lightbox-title">What This Is</h3>
-              <p class="lightbox-desc">Description of work, Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>
-              <a class="lightbox-seeMore" href="#">See more!</a>
-            </div>
-          </div>
-
-        </div>
-        <div id="content" class="row">
-          <!-- <div id="piece1" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece2" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece3" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece4" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece5" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece6" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece7" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece8" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div>
-          <div id="piece9" class="small-12 medium-4 large-4 columns green portfolioPiece">
-            <h4>Title of Piece</h4>
-          </div> -->
-      </div>
-
       <section id="videoSection">
         <div class="row">
           <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
@@ -186,7 +187,6 @@ if(isset($_POST['submit']))
           </div>
         </div>
         <div id="videoPlayer" class="row">
-
           <video id="videoTag" class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns" poster="images/intro-thumbnail.png" controls>
             <source src="motion/intro.mp4" type="video/mp4"/>
             <source src="motion/intro.ogv" type="video/ogv"/>
@@ -194,38 +194,137 @@ if(isset($_POST['submit']))
             Your browser does not support this video.
           </video>
         </div>
-
-
       </section>
-    </section>
 
-    <div class="row">
+      <div class="row">
       <div class="small-12 medium-10 medium-offset-1 large-10 large-offset-1 columns">
         <h3 id="videoTitle">Personal Intro</h3>
         <p id="videoDesc">This is a video I created in Adobe After Effects as an intro to my personal brand. My whole brand is based around "thinking outside of the box". The beginning of the video starts very grey and not very much is occurring. As the video progresses, the animations become more intricate until its eventually revealed that the first portion of the video occurred inside of "the box". Once this is revealed, the screen is filled with colour that represents "creativity". The video eventually ends off by all of the colour going into my name to represent that I am the one doing the creative thinking.</div>
-    </div>
+          <a class="caseStudy" href="#" target="_blank">See How I did it</a>
+      </div>
 
-    <div class="vidThumbnails row">
-      <div class="small-6 small-offset-3 medium-3  medium-offset-0 large-3 columns thumb1 thumbs">
-        <img src="motion/rw-intro_thumb.png" alt="Personal intro video thumbnail">
+      <div class="vidThumbnails row">
+        <div class="small-6 small-offset-3 medium-3  medium-offset-0 large-3 columns thumb1 thumbs">
+          <img src="motion/rw-intro_thumb.png" alt="Personal intro video thumbnail">
+        </div>
+        <div class="small-6  small-offset-3 medium-3 medium-pull-0 large-3 columns thumb2 thumbs">
+          <img src="motion/mg-thumb.jpg" alt="The Amazing Adventures of Melvin Gordon video thumbnail">
+        </div>
+        <div class="small-6 small-offset-3 medium-3 medium-offset-0  large-3 columns thumb3 thumbs">
+          <img src="motion/soccer-ad_thumb.jpg" alt="World Soccer Awards ad video thumbnail">
+        </div>
+        <div class="small-6 small-pull-3 medium-3 medium-pull-0 medium-offset-0 large-3 large-pull-0 columns thumb4 thumbs">
+          <img src="motion/about-me_thumb.jpg" alt="About Me video thumbnail">
+        </div>
       </div>
-      <div class="small-6  small-offset-3 medium-3 medium-pull-0 large-3 columns thumb2 thumbs">
-        <img src="motion/mg-thumb.jpg" alt="The Amazing Adventures of Melvin Gordon video thumbnail">
+
+      <div class="vidThumbnails row">
+        <div class="small-6 small-offset-3 medium-3  medium-offset-0 large-3 columns thumb5 thumbs">
+          <img src="motion/bumper-thumb.jpg" alt="Meaghan Mikkelson Bumper thumbnail">
+        </div>
+        <div class="small-6  small-offset-3 medium-3 medium-pull-0 large-3 columns thumb6 thumbs">
+          <img src="motion/net-zero_thumb.jpg" alt="What is Net Zero Living thumbnail">
+        </div>
+        <div class="small-6 small-offset-3 medium-3 medium-offset-0  large-3 columns thumb7 thumbs">
+          <img src="motion/coming-soon.png" alt="Video coming soon">
+        </div>
+        <div class="small-6 small-pull-3 medium-3 medium-pull-0 medium-offset-0 large-3 large-pull-0 columns thumb8 thumbs">
+          <img src="motion/coming-soon.png" alt="Video coming soon">
+        </div>
       </div>
-      <div class="small-6 small-offset-3 medium-3 medium-offset-0  large-3 columns thumb3 thumbs">
-        <img src="motion/soccer-ad_thumb.jpg" alt="World Soccer Awards ad video thumbnail">
-      </div>
-      <div class="small-6 small-pull-3 medium-3 medium-pull-0 medium-offset-0 large-3 large-pull-0 columns thumb4 thumbs">
-        <img src="motion/about-me_thumb.jpg" alt="About Me video thumbnail">
-      </div>
-    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Graphic Design-->
+
+
+    <section id="section4">
+      <h2 class="hide">Portfolio</h2>
+      <h2>Graphic Design</h2>
+
+          <div class="row">
+            <div class="small-12 medium-12 large-12 columns lightbox">
+
+              <!-- <i class="fa fa-times fa-2x close-lightbox"></i> -->
+              <p class="close-lightbox">Close!</p>
+              <div class="">
+                <img src="" alt="Placeholder Text" class="lightbox-img">
+                <h3 class="lightbox-title">What This Is</h3>
+                <p class="lightbox-desc">Description of work, Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.Description of work, consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.consectetur adipiscing elit. Nam tempor dignissim felis, ac tincidunt enim pulvinar euismod. Phasellus vitae varius purus, et hendrerit tortor. Mauris laoreet lorem eu varius tincidunt. Proin ex urna, venenatis vitae lacus nec, mattis vulputate arcu. Duis in sem pellentesque, fermentum libero nec, tempor velit. Aliquam sollicitudin, arcu ultrices volutpat dapibus, lorem nibh dapibus arcu, sit amet euismod nulla massa vel turpis.</p>
+                <a class="lightbox-seeMore" href="#" target="_blank">See more!</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="content" class="row">
+             <div id="piece1" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Surfs Up Website</h4>
+            </div>
+            <div id="piece2" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Team Canada Logo</h4>
+            </div>
+            <div id="piece3" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Melvin Gordon T-Shirt</h4>
+            </div>
+            <div id="piece4" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Organ Donation Poster</h4>
+            </div>
+            <div id="piece5" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Flashback Website Design</h4>
+            </div>
+            <div id="piece6" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Pearl Jam Album Cover</h4>
+            </div>
+            <div id="piece7" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Ice Cube Tour App</h4>
+            </div>
+            <div id="piece8" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Hub-Tones Beer Label</h4>
+            </div>
+            <div id="piece9" class="small-12 medium-4 large-4 columns green portfolioPiece">
+              <h4>Cultivate Dance Logo</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--Contact-->
     <div id="envelope" class="scrollme row">
       <img id="envelopeFront" src="images/envelope-front.svg" alt="Front of an envelope">
 
-      <section id="section4" class="animateme small-12 medium-10 medium-offset-1 large-10 large-offset-1 columns" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
+      <section id="section5" class="animateme small-12 medium-10 medium-offset-1 large-10 large-offset-1 columns" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
       <h2>Contact Me</h2>
         <div class="row">
           <div class="small-12 medium-12 large-12 columns">
@@ -246,7 +345,8 @@ if(isset($_POST['submit']))
         </div>
       </section>
 
-      <section id="section5" class="small-12 medium-10 medium-pull-1 large-10 large-offset-1 columns" data-hide-for:"medium" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
+
+      <section id="section6" class="small-12 medium-10 medium-pull-1 large-10 large-offset-1 columns" data-hide-for:"medium" data-when="exit" data-from="0.4" data-to="0" data-easing="easeout" data-translatey="300">
       <h2>Contact Me</h2>
         <div class="row">
           <div class="small-12 medium-12 large-12 columns">
@@ -259,9 +359,6 @@ if(isset($_POST['submit']))
               <textarea name="comments" class="comments" required cols="50" rows="8" placeholder="Write your message here..."></textarea>
               <div class=" bottom row">
                 <input id="submitSmall" name="submitSmall" type="submit" value="Send!" class="small-6 medium-6 medium-offset-3 large-6 large-offset-3 columns submit">
-                <!--<a class="small-3 small-offset-3 columns" href="https://www.linkedin.com/in/ryanwagget/" title="LinkedIn" id="LinkedIn">
-                  <img src="images/linkedin.svg" alt="LinkedIn Icon">
-                </a>-->
               </div>
           </form>
         </div>
@@ -276,7 +373,7 @@ if(isset($_POST['submit']))
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <!--<script src="js/contentWork.js"></script>-->
-    <script src="js/lightbox.js"></script>
+    <!-- <script src="js/lightbox.js"></script> -->
     <!--<script src="js/modules/videos.js"></script>-->
   </body>
 </html>
